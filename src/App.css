@@ -1,38 +1,62 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins&display=swap');
+
+
+.hero-container {
+  background : linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./bgpic_..jpg');
+  background-size : cover;
+  height: 100vh;
+  width : 100vw;
+  background-repeat:no-repeat; 
+  background-position: center;
+  position: relative;
+}
+.hero-image{
+  text-align:center;
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  margin-top: 5%;
+}
+.hero-image h1
+{
+  font-family:'Poppins', sans-serif;
   text-align: center;
+  font-size: 45px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+input[type=text]{
+  position: relative;
+  padding: 15px 40px 15px 20px;
+  color: #525252;
+  font-size: 17px;
+  font-family:'Poppins', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+  outline: none;
+}
+button{
+  background-color: #000000; /* Green */
+  border: none;
+  border-radius: 15px;
   color: white;
-}
+  margin-left: 5%;
+  padding: 15px 32px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
 }
